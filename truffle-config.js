@@ -71,11 +71,11 @@ module.exports = {
       provider: () =>
         new HDWalletProvider({
           mnemonic: {
-            phrase: "twelve test bus scene idle idle maid slab cluster quantum area patch"
+            phrase: mnemonic
           },
-          providerOrUrl: "https://speedy-nodes-nyc.moralis.io/4d075f14d3ea32613e2887d1/eth/ropsten",
+          providerOrUrl: "https://eth-ropsten.alchemyapi.io/v2/ktmzy2KA3KycQd1Ny0XI83E_ysQbgXcK",
         }),
-          network_id: 3,       // Ropsten's id
+      network_id: 3,       // Ropsten's id
       gas: 5500000,        // Ropsten has a lower block limit than mainnet
       confirmations: 2,    // # of confs to wait between deployments. (default: 0)
       timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
