@@ -4,9 +4,9 @@ See the main contract at [contracts/PollBooth.sol](https://github.com/michael-mc
 
 ## About
 
-A decentralized smart contract running on the Ethereum blockchain. It's written in the Solidity programming language, which syntactically feels like a mix between Java and JavaScript. The purpose of this contract is to store any name or item (represented as a string) and save how many votes it has using a hashmap for O(1) operations. Big O notation is important when developing for this blockchain in particular because you pay in Ether for processing time when interacting with it.
+A decentralized smart contract running on the Ethereum blockchain. It's written in the Solidity programming language, which syntactically feels like a mix between Java and JavaScript. The purpose of this contract is to store any name or item (represented as a string) and save how many votes it has using a hashmap for O(1) operations. Big O notation is important when developing for this blockchain in particular because you pay Ether for processing time when interacting with it.
 
-I created this project to learn more about the crypto world and to become more familiar with the technologies. I deployed it locally using a local blockchain with Truffle and Ganache. And then deployed to the Ropsten testnet which is one step away from deploying to mainnet, the actual Ethereum blockchain.
+I created this project to learn more about the crypto world and to become more familiar with the technologies. I deployed it locally using a local blockchain with Truffle and Ganache. And then deployed to the Ropsten testnet which is one step away from deploying to mainnet, the actual live Ethereum blockchain.
 
 It was a lot of fun, Solidity is interesting, and now that I understand it I look forward to creating more contracts and deploying to mainnet in the future.
 
