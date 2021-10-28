@@ -9,15 +9,15 @@ git clone https://github.com/michael-mcmasters/Poll-Booth-Smart-Contract.git
 cd Poll-Booth-Smart-Contract
 ```
 
-Install Truffle to get a local blockchain. Then install a hardware wallet to store your fake Ether.
+Use [NPM](https://www.npmjs.com/) to install Truffle which will give you a local blockchain. Then install a hardware wallet to store your fake Ether.
 <br>
-(This may take a few minutes.)
+(Both commands may take a few minutes.)
 ```
 npm install -g truffle
 npm install @truffle/hdwallet-provider
 ```
 
-Compile the program.
+Compile the smart contracts.
 ```
 truffle compile
 ```
@@ -34,9 +34,9 @@ Deploy the contracts to the blockchain.
 truffle(develop)> truffle migrate
 ```
 
-You can now interact with the smart contract by using JavaScript in the command line, just as if you were using it in a browser console.
+You can now interact with the smart contracts by using JavaScript in the command line, just as if you were using it in a browser console.
 <br>
-Create an instance of the contract.
+Create an instance of the PollBooth contract.
 ```
 truffle(develop)> let instance = await PollBooth.deployed()
 ```
