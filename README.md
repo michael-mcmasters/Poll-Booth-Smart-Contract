@@ -1,7 +1,6 @@
 ## Poll-Booth-Smart-Contract
 
-
-The main contract can be found at [contracts/PollBooth.sol](https://github.com/michael-mcmasters/Poll-Booth-Smart-Contract/blob/master/contracts/PollBooth.sol).
+See the main contract at [contracts/PollBooth.sol](https://github.com/michael-mcmasters/Poll-Booth-Smart-Contract/blob/master/contracts/PollBooth.sol).
 
 ## About
 
@@ -17,27 +16,29 @@ The contract is pretty straight forward with 3 public methods:
 
 Vote for an item:
 <br>
-```voteFor()```
+```voteFor("Oreo Mocha Fudge Blizzard")```
 
 See how many votes an item has
 <br>
-```getVotesFor()```
+```getVotesFor("Strawberry Swizzle Blizzard")```
 
 Get the current winner
 <br>
 ```getWinner()```
 
-If you would like to interact with the contract, follow the steps below:
-
+In this scenario Oreo Mocha Fudge Blizzard is the winner, as it should be. But you can call any function as many times as you want to get different results. If you'd like to try it out yourself, follow the steps below.
 
 ## To Run Locally
 
+Make sure [Node.js](https://nodejs.org/en/) and [NPM](https://www.npmjs.com/) are installed on your computer.
+<br>
+Clone and cd into the project.
 ```
 git clone https://github.com/michael-mcmasters/Poll-Booth-Smart-Contract.git
 cd Poll-Booth-Smart-Contract
 ```
 
-Use [NPM](https://www.npmjs.com/) to install Truffle which will give you a local blockchain. Then install a hardware wallet to store your fake Ether.
+Use NPM to install Truffle which will give you a local blockchain. Then install a hardware wallet to store your fake Ether.
 <br>
 (Both commands may take a few minutes.)
 ```
@@ -49,7 +50,7 @@ Compile the smart contracts.
 ```
 truffle compile
 ```
-You should now have a ./build directory with Migrations.json and PollBooth.json inside.
+You should now have a `./build` directory with Migrations.json and PollBooth.json inside.
 <br>
 Start the blockchain.
 ```
