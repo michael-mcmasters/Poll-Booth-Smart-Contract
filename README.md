@@ -1,6 +1,34 @@
-This is a smart contract deployed to the Ethereum blockchain. The main contract can be found at [contracts/PollBooth.sol](https://github.com/michael-mcmasters/Poll-Booth-Smart-Contract/blob/master/contracts/PollBooth.sol)
+## Poll-Booth-Smart-Contract
 
-This contract allows you to vote for any item or person (represented as a string), retrieve who is currently winning, and get all items and their corresponding tallies. The data is stored in a hashmap for O(1) time complexity to lessen gas fees. The string type could be changed to bytes32 for more effeciency but I decided against it for readability while getting used to the data types. This was just a fun project I decided to take on to learn how to deploy to testnet and mainnet, and learn all of the different tools such as Truffle, Ganache, Ropsten and more. It was a lot of fun and I plan on developing more in the future.
+
+The main contract can be found at [contracts/PollBooth.sol](https://github.com/michael-mcmasters/Poll-Booth-Smart-Contract/blob/master/contracts/PollBooth.sol).
+
+## About
+
+A decentralized smart contract running on the Ethereum blockchain. It's written in the Solidity programming language, which syntactically feels like a mix between Java and JavaScript. The purpose of this contract is to store any name or item (represented as a string) and save how many votes it has using a hashmap for O(1) operations. Big O notation is important when developing for this blockchain in particular because you pay in Ether for processing time when interacting with it.
+
+I created this project to learn more about the crypto world and to become more familiar with the technologies. I deployed it locally using a local blockchain with Truffle and Ganache. And then deployed to the Ropsten testnet which is one step away from deploying to mainnet, the actual Ethereum blockchain.
+
+It was a lot of fun, Solidity is interesting, and now that I understand it I look forward to creating more contracts and deploying to mainnet in the future.
+
+## Functionality
+
+The contract is pretty straight forward with 3 public methods:
+
+Vote for an item:
+<br>
+```voteFor()```
+
+See how many votes an item has
+<br>
+```getVotesFor()```
+
+Get the current winner
+<br>
+```getWinner()```
+
+If you would like to interact with the contract, follow the steps below:
+
 
 ## To Run Locally
 
